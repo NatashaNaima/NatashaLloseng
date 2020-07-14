@@ -1,0 +1,241 @@
+Natasha Hussain
+300122562
+nhuss067@uottawa.ca
+
+Test 1001
+
+C:\Users\natas\Documents\GitHub\NatashaLloseng\code\simplechat1>java -classpath ..\..\code;. EchoServer
+Server listening for connections on port 5555
+
+Test 1002
+
+C:\Users\natas\Documents\GitHub\NatashaLloseng\code\simplechat1>java -classpath ..\..\code;. ClientConsole
+Error: Can't setup connection! Terminating client.
+
+Test 1003/4/5
+Server:
+C:\Users\natas\Documents\GitHub\NatashaLloseng\code\simplechat1>java -classpath ..\..\code;. EchoServer
+Server listening for connections on port 5555
+Message received:  from 127.0.0.1 (127.0.0.1)
+
+Client:
+C:\Users\natas\Documents\GitHub\NatashaLloseng\code\simplechat1>java -classpath ..\..\code;. ClientConsole
+
+>
+
+> Could not send message to server.  Terminating client.
+
+Test 1006
+Server:
+C:\Users\natas\Documents\GitHub\NatashaLloseng\code\simplechat1>java -classpath ..\..\code;. EchoServer
+Server listening for connections on port 5555
+Message received: null from 127.0.0.1 (127.0.0.1)
+Message received: null from 127.0.0.1 (127.0.0.1)
+
+Client:
+C:\Users\natas\Documents\GitHub\NatashaLloseng\code\simplechat1>java -classpath ..\..\code;. ClientConsole
+
+
+Test 1007/13
+Server:
+C:\Users\natas\Documents\GitHub\NatashaLloseng\code\simplechat1>java -classpath ..\..\code;. EchoServer
+Server listening for connections on port 5555
+Message received: null from 127.0.0.1 (127.0.0.1)
+Message received: null from 127.0.0.1 (127.0.0.1)
+Message received: Hello! from 127.0.0.1 (127.0.0.1)
+Message received: Hello! from 127.0.0.1 (127.0.0.1)
+
+Client1:
+C:\Users\natas\Documents\GitHub\NatashaLloseng\code\simplechat1>java -classpath ..\..\code;. ClientConsole
+Hello!
+> Hello!
+
+Client2:
+C:\Users\natas\Documents\GitHub\NatashaLloseng\code\simplechat1>java -classpath ..\..\code;. ClientConsole
+Hello!
+> Hello!
+> Hello!
+
+Client3:
+C:\Users\natas\Documents\GitHub\NatashaLloseng\code\simplechat1>java -classpath ..\..\code;. ClientConsole
+Hello!
+> Hello!
+> Hello!
+
+
+Phase 2
+Test 2001
+C:\Users\natas\Documents\GitHub\NatashaLloseng\code\simplechat1>java -classpath ..\..\code;. ServerConsole
+Server listening for connections on port 5555
+Connection: 127.0.0.1 (127.0.0.1) has connected
+Message received: #login SERVER MSG>  from 127.0.0.1 (127.0.0.1)
+#login SERVER MSG>
+
+Test 2002
+C:\Users\natas\Documents\GitHub\NatashaLloseng\code\simplechat1>java -classpath ..\..\code;. ClientConsole
+You need a login ID
+
+Test 2003
+C:\Users\natas\Documents\GitHub\NatashaLloseng\code\simplechat1>java -classpath ..\..\code;. ClientConsole "Natasha"
+Error: Can't setup connection! Terminating Client.
+
+Test 2004/5/6/7
+Server:
+C:\Users\natas\Documents\GitHub\NatashaLloseng\code\simplechat1>java -classpath ..\..\code;. ServerConsole
+Server listening for connections on port 5555
+Connection: 127.0.0.1 (127.0.0.1) has connected
+Message received: #login SERVER MSG>  from 127.0.0.1 (127.0.0.1)
+#login SERVER MSG>
+Connection: 127.0.0.1 (127.0.0.1) has connected
+Message received: #login Natasha from 127.0.0.1 (127.0.0.1)
+#login Natasha
+Message received: Hello! from 127.0.0.1 (127.0.0.1)
+ Natasha> Hello!
+Welcome!
+Message received: SERVER MSG> Welcome! from 127.0.0.1 (127.0.0.1)
+ SERVER MSG> > SERVER MSG> Welcome!
+#quit
+Server has stopped listening for connections.
+Disconnection: null has disconnected
+Disconnection: null has disconnected
+
+Client:
+C:\Users\natas\Documents\GitHub\NatashaLloseng\code\simplechat1>java -classpath ..\..\code;. ClientConsole "Natasha"
+#login Natasha
+Hello!
+ Natasha> Hello!
+ SERVER MSG> > SERVER MSG> Welcome!
+
+Test 2008/9
+Server:
+C:\Users\natas\Documents\GitHub\NatashaLloseng\code\simplechat1>java -classpath ..\..\code;. ServerConsole
+Server listening for connections on port 5555
+Connection: 127.0.0.1 (127.0.0.1) has connected
+Message received: #login SERVER MSG>  from 127.0.0.1 (127.0.0.1)
+#login SERVER MSG>
+Connection: 127.0.0.1 (127.0.0.1) has connected
+Message received: #login ahsatan from 127.0.0.1 (127.0.0.1)
+#login ahsatan
+#stop
+Server has stopped listening for connections.
+Message received: Hello from 127.0.0.1 (127.0.0.1)
+ ahsatan> Hello
+#start
+Server listening for connections on port 5555
+Connection: 127.0.0.1 (127.0.0.1) has connected
+Message received: #login Natasha from 127.0.0.1 (127.0.0.1)
+#login Natasha
+#close
+Server has stopped listening for connections.
+Disconnection: null has disconnected
+Disconnection: null has disconnected
+Disconnection: null has disconnected
+
+Client 1:
+C:\Users\natas\Documents\GitHub\NatashaLloseng\code\simplechat1>java -classpath ..\..\code;. ClientConsole "ahsatan"
+#login ahsatan
+Hello
+ ahsatan> Hello
+#login Natasha
+
+Client 2:
+C:\Users\natas\Documents\GitHub\NatashaLloseng\code\simplechat1>java -classpath ..\..\code;. ClientConsole "Natasha"
+#login Natasha
+
+Test2009:
+C:\Users\natas\Documents\GitHub\NatashaLloseng\code\simplechat1>java -classpath ..\..\code;. ClientConsole "Natasha"
+#login Natasha
+#quit
+
+Test 2010:
+C:\Users\natas\Documents\GitHub\NatashaLloseng\code\simplechat1>java -classpath ..\..\code;. ClientConsole "Natasha"
+#login Natasha
+#quit
+
+Test 2011:
+C:\Users\natas\Documents\GitHub\NatashaLloseng\code\simplechat1>java -classpath ..\..\code;. ClientConsole "Natasha"
+#login Natasha
+#logoff
+
+Test 2012:
+C:\Users\natas\Documents\GitHub\NatashaLloseng\code\simplechat1>java -classpath ..\..\code;. ClientConsole "Natasha" "localhost"
+#login Natasha
+#logoff
+#sethost localhost
+#setport 1234
+
+Test 2013/4/5
+Server:
+C:\Users\natas\Documents\GitHub\NatashaLloseng\code\simplechat1>java -classpath ..\..\code;. ServerConsole
+Server listening for connections on port 5555
+Connection: 127.0.0.1 (127.0.0.1) has connected
+Message received: #login SERVER MSG>  from 127.0.0.1 (127.0.0.1)
+#login SERVER MSG>
+Connection: 127.0.0.1 (127.0.0.1) has connected
+Message received: #login Natasha from 127.0.0.1 (127.0.0.1)
+#login Natasha
+Connection: 127.0.0.1 (127.0.0.1) has connected
+Message received: #login Nat from 127.0.0.1 (127.0.0.1)
+#login Nat
+Message received: Hello from 127.0.0.1 (127.0.0.1)
+ Nat> Hello
+Hi
+Message received: SERVER MSG> Hi from 127.0.0.1 (127.0.0.1)
+ SERVER MSG> > SERVER MSG> Hi
+Message received: How are you from 127.0.0.1 (127.0.0.1)
+ Nat> How are you
+#close
+Server has stopped listening for connections.
+Disconnection: null has disconnected
+Disconnection: null has disconnected
+Disconnection: null has disconnected
+#setport 1234
+#start
+Server listening for connections on port 1234
+Connection: 127.0.0.1 (127.0.0.1) has connected
+Connection: 127.0.0.1 (127.0.0.1) has connected
+#quit
+Server has stopped listening for connections.
+Disconnection: null has disconnected
+Disconnection: null has disconnected
+Disconnection: null has disconnected
+
+Client1:
+C:\Users\natas\Documents\GitHub\NatashaLloseng\code\simplechat1>java -classpath ..\..\code;. ClientConsole "Nat"
+#login Nat
+Hello
+ Nat> Hello
+ SERVER MSG> > SERVER MSG> Hi
+How are you
+ Nat> How are you
+#setport 1234
+
+
+Client 2:
+C:\Users\natas\Documents\GitHub\NatashaLloseng\code\simplechat1>java -classpath ..\..\code;. ClientConsole "Natasha"
+#login Natasha
+#login Nat
+ Nat> Hello
+ SERVER MSG> > SERVER MSG> Hi
+ Nat> How are you
+#setport1234
+
+Test 2017
+C:\Users\natas\Documents\GitHub\NatashaLloseng\code\simplechat1>java -classpath ..\..\code;. ServerConsole
+Server listening for connections on port 5555
+Connection: 127.0.0.1 (127.0.0.1) has connected
+Message received: #login SERVER MSG>  from 127.0.0.1 (127.0.0.1)
+#login SERVER MSG>
+Connection: 127.0.0.1 (127.0.0.1) has connected
+Message received: #login Nat from 127.0.0.1 (127.0.0.1)
+#login Nat
+Connection: 127.0.0.1 (127.0.0.1) has connected
+Message received: #login Natasha from 127.0.0.1 (127.0.0.1)
+#login Natasha
+Connection: 127.0.0.1 (127.0.0.1) has connected
+Message received: #login Tash from 127.0.0.1 (127.0.0.1)
+#login Tash
+Disconnection: 127.0.0.1 (127.0.0.1) has disconnected
+Disconnection: 127.0.0.1 (127.0.0.1) has disconnected
+
+
